@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { BookOpen, Github, Search } from "lucide-react"
+import { BookOpen, Github, Search} from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import Link from "next/link"
 
@@ -10,30 +10,32 @@ export function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <BookOpen className="h-8 w-8 text-primary" />
-            <h1 className="text-2xl font-bold text-foreground">រស្មី ឌេវ</h1>
+            <h1 className="text-2xl font-bold text-foreground">SMEY Docs</h1>
           </div>
 
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            {/* <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
               Docker
             </Link>
             <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
               Kubernetes
-            </Link>
+            </Link> */}
             <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Tutorials
+              OBU Microservice Deployment
             </Link>
           </nav>
 
           <div className="flex items-center space-x-3">
-            <Button variant="outline" size="sm" className="hidden sm:flex bg-transparent">
+            {/* <Button variant="outline" size="sm" className="hidden sm:flex bg-transparent">
               <Search className="h-4 w-4 mr-2" />
               Search
-            </Button>
+            </Button> */}
             <ThemeToggle />
-            <Button size="sm">
-              <Github className="h-4 w-4 mr-2" />
-              GitHub
+            <Button asChild size="sm">
+              <Link href="https://github.com/sambathreasmey" target="_blank" rel="noopener noreferrer">
+                <Github className="h-4 w-4 mr-2" />
+                GitHub
+              </Link>
             </Button>
           </div>
         </div>

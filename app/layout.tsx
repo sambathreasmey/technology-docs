@@ -8,8 +8,8 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "DevDocs - Learn Docker & Kubernetes",
-  description: "Comprehensive documentation and lessons for Docker and Kubernetes",
+  title: "SMEYDocs - OBU Microservice Deployment",
+  description: "Documentation for deployment in microservices",
   generator: "v0.app",
 }
 
